@@ -39,7 +39,6 @@
     "description": {
       "type": "text",
       "required": false,
-      "minLength": 20,
       "maxLength": 160
     },
     "keywords": {
