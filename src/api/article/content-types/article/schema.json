@@ -38,7 +38,7 @@
     },
     "description": {
       "type": "text",
-      "required": true,
+      "required": false,
       "minLength": 20,
       "maxLength": 160
     },
