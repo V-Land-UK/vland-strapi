@@ -14,9 +14,7 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "maxLength": 70,
-      "minLength": 1
+      "required": true
     },
     "slug": {
       "type": "uid",
