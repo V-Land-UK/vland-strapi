@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "slug": {
@@ -36,8 +36,7 @@
     },
     "description": {
       "type": "text",
-      "required": false,
-      "maxLength": 160
+      "required": false
     },
     "keywords": {
       "type": "text",
