@@ -14,7 +14,9 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 70,
+      "minLength": 1
     },
     "slug": {
       "type": "uid",
@@ -37,7 +39,8 @@
     "description": {
       "type": "text",
       "required": true,
-      "minLength": 20
+      "minLength": 20,
+      "maxLength": 160
     },
     "keywords": {
       "type": "text",
@@ -64,6 +67,11 @@
     "PublishDate": {
       "type": "datetime",
       "required": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
     }
   }
 }
