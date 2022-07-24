@@ -21,5 +21,40 @@ module.exports = ({ env }) => ({
   publisher: {
     enabled: true,
   },
+
+  'preview-button':{
+    enabled: true,
+    config:{
+      contentTypes:[
+        {
+          uid:'api::article.article',
+          targetField:'slug',
+          draft:{
+            query:{
+              type:'article'
+            }
+
+          },
+          published:{
+            basePath:'article'
+          }
+        }
+      ]
+      
+    }
+  },
+
+  graphql:{
+    enabled: true,
+    config:{
+      generateArtifacts: true,
+      apolloServer:{
+        tracing:true
+      }
+    },
+
+  }
+  
+
   // ...
 });
