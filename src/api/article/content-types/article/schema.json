@@ -64,13 +64,13 @@
       "type": "datetime",
       "required": true
     },
-    "SEO": {
+    "order": {
+      "type": "biginteger"
+    },
+    "seo": {
       "type": "component",
       "repeatable": true,
       "component": "shared.seo"
-    },
-    "order": {
-      "type": "biginteger"
     }
   }
 }
