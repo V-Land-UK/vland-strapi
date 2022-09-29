@@ -27,9 +27,9 @@
       "target": "api::article.article",
       "mappedBy": "categories"
     },
-    "ad": {
+    "ads": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::ad.ad",
       "inversedBy": "categories"
     }
