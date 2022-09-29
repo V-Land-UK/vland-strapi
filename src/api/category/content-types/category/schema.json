@@ -26,6 +26,12 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "categories"
+    },
+    "ad": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ad.ad",
+      "inversedBy": "categories"
     }
   }
 }
