@@ -33,6 +33,11 @@ module.exports = [
   // ...
   "strapi::errors",
   "strapi::cors",
+  
+ 
+  
+  
+  
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
@@ -40,4 +45,13 @@ module.exports = [
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
+  {
+    name: "strapi::compression",
+    config:{
+      br:true,
+      gzip:true,
+      
+    }
+  },
+  
 ];
